@@ -3,7 +3,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-            <img src="../public/images/logo.svg" alt="" />
+            <img src="../public/images/Logo.svg" alt="" />
             <div style={{display:'flex',gap:'20px',textDecoration:'none'}}>
                 <a href="/Order">Order</a>
                 <a href="/Review">Review</a>

@@ -1,9 +1,14 @@
 import React from 'react';
-
-const Cart = () => {
+import './Cart.css'
+const Cart = ({cart}) => {
+    const total = Object.values(cart).reduce((t, {price}) => t + price, 0)
     return (
-        <div>
-            <h1>cart itemz</h1>
+        <div className='cart'>
+            <h3>Order Summary</h3>
+            <div>
+                <p>Total products: {cart.length}</p>
+                <p>Price: {total}</p>
+            </div>
         </div>
     );
 };
